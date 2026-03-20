@@ -12,6 +12,7 @@
 }
 .pages{
     display: flex;
+    flex-wrap: wrap;/**/
     align-content: space-between;
 }
 .pages a{
@@ -25,6 +26,7 @@ a:hover{
 .header{
     display:grid;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 /*buttons at the coner*/
 .corner{
@@ -32,12 +34,19 @@ a:hover{
     display: grid;
     margin-top: 15%;
     justify-self: flex-end;
+    flex-wrap: wrap;
 }
 #blue{
     color: white;
     background-color: black;
     font-size: 20px;
     width: 150px;
+}#blue1{
+    color: rgb(10, 10, 10);
+    background-color: rgba(20, 160, 216, 0.445);
+    font-size: 20px;
+    width: 150px;
+    border-style: none;
 }
 #blue a{
     color: white;
@@ -338,9 +347,11 @@ body {
   margin: 0;
   font-family: Arial;
   border: 0;
+  flex-wrap: wrap;
 }
-
-
+  @media screen {
+    max-width: 768px;
+  }
 
 .panel {
   position: fixed;

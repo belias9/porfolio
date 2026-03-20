@@ -71,9 +71,24 @@ a:hover{
 
 .section2{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     padding-top: 10%;
     padding: 150px;
+}
+.description,.image{
+    width: 50%;
+}
+@media screen (max-width:768px;) {
+    .section2{
+        flex-wrap: wrap-reverse;
+    }
+    .image{
+        order: 1;
+    }
+    .description,.image{
+        width: 100%;
+    }
 }
 /*textarea*/
 .message{
@@ -172,7 +187,7 @@ h1{
 .intro{
     padding-left: 150px;
     margin: 50px;
-    font-size: 70px;
+    font-size: 50px;
 }
 h2{
     font-size: 50px;
@@ -185,12 +200,14 @@ h2{
 }
 #section3{
     display: flex;
+    flex-wrap: wrap;
     width: 90%;
     margin-left: 125px;
 
 }
 #section4{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     }
 .sectionpro2{
@@ -237,6 +254,7 @@ span{
     color: bisque;
     font-size: 60px;
     display: flex;
+    max-width: 1200px;
     height: 400px;
     padding-top: 100px;
     margin-top: 100px;

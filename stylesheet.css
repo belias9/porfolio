@@ -106,6 +106,9 @@ a:hover{
     .images{
         flex-wrap: wrap;
     }
+    .section3.2{
+        flex-wrap: wrap;
+    }
 }
 /*textarea*/
 .message{

@@ -12,7 +12,6 @@
 }
 .pages{
     display: flex;
-    flex-wrap: wrap;/**/
     align-content: space-between;
 }
 .pages a{
@@ -43,7 +42,7 @@ a:hover{
     width: 150px;
 }#blue1{
     color: rgb(10, 10, 10);
-    background-color: rgba(20, 160, 216, 0.445);
+    background-color:blue;
     font-size: 20px;
     width: 150px;
     border-style: none;
@@ -76,18 +75,36 @@ a:hover{
     padding-top: 10%;
     padding: 150px;
 }
+.section21{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10%;
+    padding: 150px;
+}
 .description,.image{
     width: 50%;
 }
-@media screen (max-width:768px;) {
+@media screen  {
     .section2{
         flex-wrap: wrap-reverse;
+    }
+    .section21{
+        flex-wrap: wrap;
     }
     .image{
         order: 1;
     }
     .description,.image{
         width: 100%;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    #section4{
+        flex-wrap: wrap;
+    }
+    .images{
+        flex-wrap: wrap;
     }
 }
 /*textarea*/
@@ -185,12 +202,12 @@ h1{
     color: red;
 }
 .intro{
-    padding-left: 150px;
+    padding-left: 100px;
     margin: 50px;
     font-size: 50px;
 }
 h2{
-    font-size: 50px;
+    font-size: 30px;
 }
 #description{
     font-size: 20px;
@@ -207,7 +224,6 @@ h2{
 }
 #section4{
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     }
 .sectionpro2{

@@ -107,6 +107,10 @@ a:hover{
         flex-wrap: wrap;
     }
     .section3.2{
+        flex-direction: column-fill: ;;
+        
+    }
+    .pages{
         flex-wrap: wrap;
     }
 }
